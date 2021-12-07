@@ -102,6 +102,17 @@ pip3 freeze > requirements.txt - Для записи вывода в requirement
 
 
 ===== REACT ===== 
+python3 -m pip install django-cors-headers - in django terminal
+Add in:
+INSTALLED_APPS = [
+    ...
+    'corsheaders',
+]
+MIDDLEWARE = [
+    ...
+    'corsheaders.middleware.CorsMiddleware'
+]
+CORS_ALLOW_ALL_ORIGINS = True - add this in sittings.py
 npx create-react-app name_of_app - create React app
 cd name_of_app - go to folder React app
 npm start - start React app
