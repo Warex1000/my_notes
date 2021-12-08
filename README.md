@@ -120,3 +120,6 @@ setupTests.js, reportWebVitals.js, logo.svg, index.css, App.test.js - dell it in
 import logo from './logo.svg'; and <header className="App-header">...</header> - dell it in file App.js
 reportWebVitals(); and import reportWebVitals from './reportWebVitals'; and import './index.css'; - dell it in index.js
 App.css - dell all information
+npm install react-router-dom - install reactrouterdom for url Django/React
+npm audit fix --force - fix problem in reactrouterdom
+"proxy": "http://127.0.0.1:8000", - add it to package.json

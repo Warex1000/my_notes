@@ -1,14 +1,24 @@
+import {
+  HashRouter as Router,
+  Route
+} from "react-router-dom";
+
+
 import './App.css';
-import Header from "./components/Header";
-import NotesListPage from './pages/NotesListPage';
+import Header from './components/Header'
+import NotesListPage from './pages/NotesListPage'
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <NotesListPage />
-    MY APP  (53:10)
-    </div>
+    <Router>
+      <div className="container dark">
+        <div className="app">
+          <Header />
+          <Route path="/" exact component={NotesListPage} />
+        {/*    1:20:33 */}
+        </div>
+      </div>
+    </Router>
   );
 }
 
